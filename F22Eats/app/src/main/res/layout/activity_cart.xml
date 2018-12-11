@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.CartActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLimeYellow"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/sixteen_dps">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sixteen_dps"
+                android:layout_marginBottom="@dimen/sixteen_dps"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/sixteen_dps"
+                    android:layout_marginBottom="@dimen/eight_dps"
+                    android:gravity="center"
+                    android:text="@string/cart_heading"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_medium" />
+
+                <View style="@style/styleLine" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview_cart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/sixteen_dps"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/eight_dps">
+
+                <EditText
+                    android:id="@+id/et_coupon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/eight_dps"
+                    android:hint="@string/hint_edittext"
+                    android:inputType="textCapCharacters"
+                    android:paddingLeft="@dimen/eight_dps"
+                    android:paddingTop="@dimen/sixteen_dps"
+                    android:paddingBottom="@dimen/sixteen_dps" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_apply_coupon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/eight_dps"
+                        android:background="@color/colorPrimaryDark"
+                        android:onClick="onApplyCouponClicked"
+                        android:padding="@dimen/eight_dps"
+                        android:text="@string/apply_coupon" />
+
+                    <Button
+                        android:id="@+id/btn_view_coupon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/eight_dps"
+                        android:background="@color/colorPrimaryDark"
+                        android:onClick="onViewCouponClicked"
+                        android:padding="@dimen/eight_dps"
+                        android:text="@string/show_coupon" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/sixteen_dps">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/sixteen_dps"
+                    android:layout_marginTop="@dimen/eight_dps"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center_vertical"
+                    android:text="@string/bill_details"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/count_size"
+                    android:textStyle="bold" />
+
+                <LinearLayout style="@style/styleCartLinearLayout">
+
+                    <TextView
+                        style="@style/styleCartItem"
+                        android:text="@string/item_total" />
+
+                    <TextView style="@style/styleCartRupeeSymbol" />
+
+                    <TextView
+                        android:id="@+id/tv_cart_total"
+                        style="@style/styleTvPrice"
+                        android:textColor="@android:color/black"
+                        tools:text="@string/sample_food_price" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/styleCartLinearLayout">
+
+                    <TextView
+                        style="@style/styleCartItem"
+                        android:text="@string/charges" />
+
+                    <TextView style="@style/styleCartRupeeSymbol" />
+
+                    <TextView
+                        android:id="@+id/tv_cart_gst"
+                        style="@style/styleTvPrice"
+                        android:textColor="@android:color/black"
+                        tools:text="@string/sample_food_price" />
+
+                </LinearLayout>
+
+                <View style="@style/styleLine" />
+
+                <LinearLayout style="@style/styleCartLinearLayout">
+
+                    <TextView
+                        style="@style/styleCartItem"
+                        android:text="@string/delivery" />
+
+                    <TextView
+                        android:id="@+id/tv_cart_delivery"
+                        style="@style/styleTvPrice"
+                        android:textColor="@android:color/black"
+                        tools:text="@string/sample_food_price" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/styleCartLinearLayout">
+
+                    <TextView
+                        style="@style/styleCartItem"
+                        android:text="@string/discount" />
+
+                    <TextView
+                        android:id="@+id/rupee_symbol"
+                        style="@style/styleCartRupeeSymbol" />
+
+                    <TextView
+                        android:id="@+id/tv_cart_discount"
+                        style="@style/styleTvPrice"
+                        android:textColor="@android:color/black"
+                        tools:text="@string/sample_food_price" />
+
+                </LinearLayout>
+
+
+                <View style="@style/styleLine" />
+
+                <LinearLayout style="@style/styleCartLinearLayout"
+                    android:paddingBottom="@dimen/twenty_dps">
+
+                    <TextView
+                        style="@style/styleCartItem"
+                        android:text="@string/grand_total" />
+
+                    <TextView style="@style/styleCartRupeeSymbol" />
+
+                    <TextView
+                        android:id="@+id/tv_cart_grand_total"
+                        style="@style/styleTvPrice"
+                        android:textColor="@android:color/black"
+                        tools:text="@string/sample_food_price" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">F22Eats</string>
+    <!--Base URL to fetch data-->
+    <string name="base_url">https://android-full-time-task.firebaseio.com/</string>
+
+    <string name="error_msg">Aw snap! Unable to retrieve data</string>
+    <string name="sample_food_name">Pizza</string>
+    <string name="sample_food_price"> 120 </string>
+
+    <!-- UNICODE symbols -->
+    <string name="rs">\u20B9</string>
+    <string name="star">\u2605</string>
+
+    <string name="sample_count">0</string>
+    <string name="add_food">ADD</string>
+    <string name="sample_food_rating">4.5</string>
+    <string name="sort">Sort / Filter</string>
+    <string name="radio_rating">Rating</string>
+    <string name="radio_sort_low">Price: Low to High</string>
+    <string name="radio_sort_high">Price: High to Low</string>
+    <string name="sort_text">SORT BY</string>
+    <string name="apply_button">Apply</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="heading_price">Price :</string>
+    <string name="heading_rating">Rating :</string>
+    <string name="contDesc">Image of the Food Item</string>
+    <string name="contDescRemove">Remove Food Item</string>
+    <string name="contDescAdd">Add Food Item</string>
+    <string name="zero_quantity">Food item quantity is already zero</string>
+    <string name="cart_heading">Order Summary</string>
+    <string name="apply_coupon">Apply Coupon</string>
+    <string name="bill_details">Bill Details</string>
+    <string name="item_total">Item Total</string>
+    <string name="charges">GST (SGST + CGST)</string>
+    <string name="delivery">Delivery</string>
+    <string name="discount">Offer Discount</string>
+    <string name="grand_total">Grand Total</string>
+    <string name="multiply">x</string>
+    <string name="sample_quantity">5</string>
+
+    <string name="dummy_item">dummy</string>
+    <string name="dummy_item_price">100</string>
+    <string name="dummy_item_qnty">0</string>
+
+    <string name="hint_edittext">Enter coupon code</string>
+    <string name="show_coupon">View Coupons</string>
+
+    <string name="invalid_coupon">Sorry, Coupon is invalid!</string>
+    <string name="total_less">Sorry, coupon not applicable!</string>
+
+    <string name="nill">Nill</string>
+    <string name="free_del">FREE</string>
+
+    <string name="coupon_f22labs">F22LABS</string>
+    <string name="coupon_freedel">FREEDEL</string>
+    <string name="min_one">Min. bill Rs. 400 get 20% Off</string>
+    <string name="min_two">Min. bill Rs. 100 get Free Delivery</string>
+    <string name="coupon_applied">Yay! Coupon applied</string>
+</resources>

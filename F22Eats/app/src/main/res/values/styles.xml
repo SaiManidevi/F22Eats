@@ -1,0 +1,117 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="titleTextStyle">@style/MyTitleTextStyle</item>
+    </style>
+
+    <style name="MyTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="styleTvFoodName">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/food_item_size</item>
+        <item name="android:layout_marginLeft">@dimen/sixteen_dps</item>
+        <item name="android:layout_marginTop">@dimen/eight_dps</item>
+    </style>
+
+    <style name="styleAddButton">
+        <item name="android:layout_height">@dimen/add_button_size</item>
+        <item name="android:layout_width">@dimen/add_button_size</item>
+        <item name="android:layout_marginLeft">@dimen/eight_dps</item>
+        <item name="android:layout_marginRight">@dimen/eight_dps</item>
+    </style>
+
+    <style name="styleTvCount">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/count_size</item>
+        <item name="android:layout_marginRight">@dimen/eight_dps</item>
+        <item name="android:layout_marginLeft">@dimen/eight_dps</item>
+    </style>
+
+    <style name="styleTvPrice">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/four_dps</item>
+        <item name="android:layout_marginRight">@dimen/sixteen_dps</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="styleTvRating">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/four_dps</item>
+        <item name="android:layout_marginTop">@dimen/eight_dps</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="styleTvSymbols">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/sixteen_dps</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="styleCartItem">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/sixteen_dps</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="styleCartRupeeSymbol">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/sixteen_dps</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:text">@string/rs</item>
+    </style>
+
+    <style name="styleLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_marginLeft">@dimen/sixteen_dps</item>
+        <item name="android:layout_marginRight">@dimen/sixteen_dps</item>
+        <item name="android:background">@android:color/darker_gray</item>
+        <item name="android:layout_marginTop">@dimen/eight_dps</item>
+    </style>
+
+    <style name="styleCartLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/sixteen_dps</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="styleCouponCode">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:padding">@dimen/sixteen_dps</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:layout_marginBottom">@dimen/sixteen_dps</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+
+</resources>
