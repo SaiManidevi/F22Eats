@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/sixteen_dps"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_cart_item_name"
+        style="@style/styleCartItem"
+        android:textColor="@android:color/black"
+        tools:text="@string/sample_food_name" />
+
+    <TextView
+        android:id="@+id/tv_cart_item_price"
+        style="@style/styleTvPrice"
+        android:layout_marginRight="@dimen/eight_dps"
+        tools:text="@string/sample_food_price" />
+
+    <TextView
+        android:id="@+id/tv_cart_item_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/multiply"
+        android:textSize="@dimen/text_medium" />
+
+    <TextView
+        android:id="@+id/tv_cart_item_qunatity"
+        style="@style/styleTvPrice"
+        tools:text="@string/sample_quantity" />
+
+    <TextView
+        android:id="@+id/tv_cart_item_rupee"
+        style="@style/styleCartRupeeSymbol" />
+
+    <TextView
+        android:id="@+id/tv_cart_item_total"
+        style="@style/styleTvPrice"
+        android:textColor="@android:color/black"
+        tools:text="@string/sample_food_price" />
+
+</LinearLayout>
