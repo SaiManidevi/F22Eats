@@ -37,6 +37,7 @@ public class CartActivity extends AppCompatActivity {
     // By default, Delivery Fee is Rs.30
     int deliveryFee = 30;
     private static final int minPrice = 400;
+    private static final int minPriceForFreeDelivery = 100;
     private static final String COUPON_F22LABS = "F22LABS";
     private static final String COUPON_FREEDEL = "FREEDEL";
 
@@ -118,7 +119,7 @@ public class CartActivity extends AppCompatActivity {
                     Toast.makeText(this, getString(R.string.total_less), Toast.LENGTH_LONG).show();
                 break;
             case COUPON_FREEDEL:
-                if (netTotal > 100) {
+                if (netTotal > minPriceForFreeDelivery) {
                     isCouponValid = true;
                     discountValue = 30;
                     Snackbar.make(binding.btnApplyCoupon, getString(R.string.coupon_applied), Snackbar.LENGTH_SHORT)
